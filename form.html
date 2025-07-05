@@ -56,7 +56,17 @@
     const respondEl = document.getElementById('response');
     form.onsubmit = e =>{
       e.preventDefault();
-      
+      fetch('')
+      {
+        method: 'POST',
+          body: new URLSearchParams(new FormData(form))
+      }
+      .then(() => {
+      responseEl.textContent ="ส่งข้อมูลสำเร็จ ขอบคุณ";
+      form.reset();
+    })
+    .catch(() => responseEl.textcontent="เกิดข้อผิดพลาด ลองใหม่");
+    };
   </script>
 
 
