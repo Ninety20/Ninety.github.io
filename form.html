@@ -51,24 +51,35 @@
 </form>
   <p id="response"></p>
 
-  <script>
-    const form = document.getElementByTd('studentform');
-    const responseEl = document.getElementById('response');
-    
-    form.onsubmit = e =>{
-      e.preventDefault();
-      fetch('https://script.google.com/a/macros/student.sk.ac.th/s/AKfycbzaaMuLZOvduWiGtf73ggeasFLpHlH6IEpyp9TIPdrY4-zqt1vLtBEOE2Ty3gCe9Qg/exec',
-      {
-        method: 'POST',
-          body: new URLSearchParams(new FormData(form))
-      })
-      .then(() => {
-      responseEl.textContent ="ส่งข้อมูลสำเร็จ ขอบคุณ";
-      form.reset();
-    })
-    .catch(() => responseEl.textcontent="เกิดข้อผิดพลาด ลองใหม่");
-    };
-  </script>
+ <br><br>
+  <label>ความคิดเห็น
+    <textarea name="comment" rows="4"
+      placeholder="ใส่ความคิดเห็นของคุณ"></textarea>
+  </label>
+  <br><br>
+<button type="submit">ส่งข้อมูล</button>
+</form>
+  <p id="response"></p>
+
+
+<script>
+const form = document.getElementById('studentform');
+const responseEl = document.getElementById('response');
+
+form.onsubmit = e =>{
+  e.preventDefault();
+fetch('https://script.google.com/macros/s/AKfycbzddlnH-Ata8AeWbZOtzcNQo3t8ZtGLhmP71Ht7nIY82t-bCDGOOBP-SyBN4bJXEwQ/exec',
+{
+  method: 'POST',
+  body: new URLSearchParams(new FormData(form))
+})
+  .then(() => {
+  responseEl.textContent ="ส่งข้อมูลสำเร็จ ขอบคุณ";
+  form.reset();
+})
+  .catch(() => responseEl.textContent="เกิดข้อผิดพลาด ลองใหม่");
+};
+</script>
 
 
 
