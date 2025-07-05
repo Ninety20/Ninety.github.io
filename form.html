@@ -53,10 +53,11 @@
 
   <script>
     const form = document.getElementByTd('studentform');
-    const respondEl = document.getElementById('response');
+    const responseEl = document.getElementById('response');
+    
     form.onsubmit = e =>{
       e.preventDefault();
-      fetch('https://script.google.com/a/macros/student.sk.ac.th/s/AKfycbzaaMuLZOvduWiGtf73ggeasFLpHlH6IEpyp9TIPdrY4-zqt1vLtBEOE2Ty3gCe9Qg/exec'
+      fetch('https://script.google.com/a/macros/student.sk.ac.th/s/AKfycbzaaMuLZOvduWiGtf73ggeasFLpHlH6IEpyp9TIPdrY4-zqt1vLtBEOE2Ty3gCe9Qg/exec',
       {
         method: 'POST',
           body: new URLSearchParams(new FormData(form))
