@@ -43,8 +43,7 @@ section{background-color:white;
   </header>
 
 <section>
-  <h1><mark>วันสันติภาพไทย คืออะไร
-</mark></h1>
+  <h1><mark>วันสันติภาพไทย คืออะไร</mark></h1>
   <p>ย้อนกลับไปเมื่อวันที่ 16 สิงหาคม 2488 ภายหลังสิ้นสุดสงครามโลกครั้งที่ 2 นายปรีดี พนมยงค์ หัวหน้าขบวนการเสรีไทย ในฐานะผู้สำเร็จราชการแทนพระองค์ในพระบาทสมเด็จพระเจ้าอยู่หัวอานันทมหิดล (รัชกาลที่ 8) ได้ออกประกาศสันติภาพพระปรมาภิไธยพระบาทสมเด็จพระเจ้าอยู่หัวอานันทมหิดล ให้การประกาศสงครามต่อสหรัฐอเมริกา บริเตนใหญ่ ถือเป็นโมฆะ หรือเรียกได้ว่าเป็นการประกาศเอกราชอธิปไตย แสดงจุดยืนแห่งความเป็นกลาง มีอิสรภาพ โดยมี นายทวี บุณยเกตุ รัฐมนตรี เป็นผู้ลงนามรับสนองพระบรมราชโองการ
   </p>
   <br>
@@ -63,13 +62,6 @@ section{background-color:white;
   <h1><mark></mark></h1>
 </section>
 
-<script>
-  function checkAnswer(btn,correct)
-    {btn.classList.add(correct?'correct':'incorrect);
-                       btn.parenElement.querySelectorALL('button').forEach(b=b.disabled=ture);}
-
-
-
 <section>
   <h1><mark>แบบทดสอบความรู้วันสันติภาพไทย</mark></h1>
   <p>1. วันสันติภาพไทยตรงกับวันที่เท่าไหร่ของทุกปี?</p>
@@ -77,18 +69,22 @@ section{background-color:white;
 <button onclick="checkAnswer(this,ture)">12 สิงหาคม</button>
 <button onclick="checkAnswer(this,ture)">5 ธันวาคม</button>
 <button onclick="checkAnswer(this,ture)">24 มิถุนายน</button>
-
+</section>
+  
 <section>
-  <p>2. ใครเป็นหัวหน้าขบวนการเสรีไทยที่มีบทบาทสำคัญในวันสันติภาพไทย?
+  <p>2. ใครเป็นหัวหน้าขบวนการเสรีไทยที่มีบทบาทสำคัญในวันสันติภาพไทย?</p>
 <button onclick="checkAnswer(this,ture)">นายทวี บุณยเกตุ</button>
 <button onclick="checkAnswer(this,ture)">นายปรีดี พนมยงค์</button>
 <button onclick="checkAnswer(this,ture)">จอมพล ป. พิบูลสงคราม</button>
 <button onclick="checkAnswer(this,ture)">รัชกาลที่ 8</button>
-
+</section>
 
 
   
-  
+<script>
+  function checkAnswer(btn,correct)
+    {btn.classList.add(correct?'correct':'incorrect');
+     btn.parentElement.querySelectorALL('button').forEach(b=>b.disabled=ture);}
 </script>
 
 </body>
