@@ -13,6 +13,43 @@
         50%{background-color:#FFFFCC;}
         100%{background-color:FFB6C1;}
       }
+      header
+      {
+        background-color: rgba(49, 232, 192, 0.45)
+        padding: 20px;
+        border-radius: 10px;
+      }
+      section
+      {
+        background-color: rgba(116, 49, 245, 0.8);
+        width: 80%
+        margin: 20px auto;
+        text-align: left;
+        border-radius:15px;
+        color: #2E8857;
+      }
+      .blink
+      {
+        color: #CD5C5C;
+        font-size: 30px;
+        animation: flash 5s infinite;
+      }
+
+      @kerframe flash
+      {
+        0% 100% {opacity:1;}
+        100% {opacity:0;}
+      }
+      img
+      {
+       border: 5px;
+        border-radius: 15px;
+        width: 400px; height:300px;
+      }
+
+      img:hover
+      {box-shadow: 0 0 20px #FFD700;}
+      
     </style>
   </head>
 </html>
