@@ -19,33 +19,6 @@
   src: url(https://fonts.gstatic.com/s/mitr/v13/pxiEypw5ucZF8YcdJIPecmNE.woff2) format('woff2');
   unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Mitr';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/mitr/v13/pxiEypw5ucZF8YcdJJjecmNE.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Mitr';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/mitr/v13/pxiEypw5ucZF8YcdJJnecmNE.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Mitr';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/mitr/v13/pxiEypw5ucZF8YcdJJfecg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 <style>
    body{https://media.istockphoto.com/id/1368189525/th/%E0%B9%80%E0%B8%A7%E0%B8%84%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%97%E0%B8%A2%E0%B8%AB%E0%B8%A3%E0%B8%B9%E0%B8%AB%E0%B8%A3%E0%B8%B2-%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%98%E0%B8%B5%E0%B8%A1%E0%B9%84%E0%B8%A5%E0%B9%81%E0%B8%A5%E0%B8%84.jpg?s=612x612&w=0&k=20&c=RSfVxSsnmJQnSMulR3M_0JWVreJ-tzQGg9TR_sRdC1A=
 .kodchasan-extralight {
@@ -53,7 +26,92 @@
   font-weight: 200;
   font-style: normal;
 }
+ cursor:url("thai.png"),auto; height:100vh;
+         mark{background-color:#FFFFE;
+        color:black;}
+ section
+      {
+        background-color: linear-gradient(#9ACD32,FFD700,white);
+        width: 90%
+        margin: 20px auto;
+        padding: 15px;
+        border-radius:10px;
+      }
+<p>(text-indent: 2em;)</P>
+.zoom:hover { 
+transform: scale(1.2); 
+cursor: pointer; 
+}
 
-        </style>
+img:hover { 
+animation: glowColors 1.2s infinite alternate; 
+}
+@keyframes glowColors {
+0% { box-shadow: 0 0 20px DodgerBlue; }
+25% { box-shadow: 0 0 20px Cyan; }
+50% { box-shadow: 0 0 20px GreenYellow; }
+75% { box-shadow: 0 0 20px LawnGreen; }
+100% { box-shadow: 0 0 20px LightCyan; }
+}
+.blink-bg {
+animation: blinkBg 1s infinite alternate;
+padding: 3px 6px;
+}
+@keyframes blinkBg {
+0% { background: yellow; }
+100% { background: #D2B48C; }
+}
+</style>
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTLku3HMPPhN7K7lTzIcG3kXgA4-Xib7xvCQ&s">
+<section>
+<center>
+<h1>mark> 5 ธันวาคม วันชาติไทย 🔥</mark></h1>
+<span class="blink-bg"> ความเป็นมาของวันชาติไทย </span>
+<br><br>
+
+<img src="https://www.sp.ac.th/wp-content/uploads/2024/01/405384489_733958198764044_825899411117138962_n-
+1600x981.jpg"
+
+width="300" height="250" class="zoom">
+</center>
+<br><br>
+<p>สำหรับประเทศไทย ...</p> 
+<p>วันที่ 24 มิถุนายน ...</p>
+<p>ด้วยคณะรัฐมนตรี ...</p>
+<p>คณะกรรมการนี้ได้พิจารณาแล้ว ...</p>
+<center>
+<span class="blink-bg"> วันชาติในประเทศอื่นๆ </span>
+<br><br>
+<img src="https://live.staticflickr.com/65535/51720409372_15972dd704_b.jpg"
+width="500" height="250" class="zoom">
+<br><br>
+<img src="https://live.staticflickr.com/65535/51730371896_3db75a8600_b.jpg"
+width="500" height="700" class="zoom">
+</center>
+<p>แม้ประเทศไทยเราเอง ...</p>
+<p>ดังนั้น นับแต่ปี พ.ศ. 2503 ...</p>
+
+<br><br>
+<center>
+<span class="blink-bg"> กิจกรรมวันชาติไทย </span>
+<br><br>
+
+<img src="https://lh3.googleusercontent.com/proxy/uIGxS3O2wXrQS1bs9DxvJxTprz-
+UiqlCrQOBOrsiWURF5k3FEazXzcAA2WzzaSb5D3etd0S1A2AeqnGs1G6uvOIxqoymgdulSun_iFveiSfftcTsSr5qkOT00w"
+
+width="500" height="250" class="zoom">
+</center>
+<br><br>
+<p>ตามปกติ การจัดงาน “วันชาติ” ...</p>
+<p>ดังนั้น “วันชาติ” ของเราจึงดูเหมือนไม่ค่อยมีความสำคัญ ...</p>
+<br><br>
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/IcPC4FdCH7g?si=tKarR86z43_D685Z"title="YouTube video player"
+frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"allowfullscreen></iframe>
+</center>
+</style>
   </head>
 </html>
